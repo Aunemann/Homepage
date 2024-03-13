@@ -162,14 +162,14 @@ h2 {
   }
 
   p.copyright {
-    position: absolute;
+    position: relative;
     width: 100%;
     color: #fff;
     line-height: 40px;
     font-size: 0.7em;
-    text-align: start;
+    text-align: center;
     bottom:0;
-    font-size: 8px;
+    font-size: 10px;
   }
   .logo {
    position: absolute;
