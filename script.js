@@ -1,15 +1,18 @@
-var client = {
-    init: function() {
-         var o=this;
+document.addEventListener('contextmenu', event => event.preventDefault());
 
-         // this will disable dragging of all images
-         $("img").mousedown(function(e){
-              e.preventDefault()
-         });
+document.onkeydown = disableSelectCopy;
 
-         // this will disable right-click on all images
-         $("body").on("contextmenu",function(e){
-              return false;
-         });
-   }
-};
+document.onmousedown = dMDown;
+
+document.onclick = dOClick;
+
+function dMDown(e) { return false; }
+
+function dOClick() { return true; }
+
+function disableSelectCopy(e) {
+    var pressedKey = String.fromCharCode(e.keyCode).toLowerCase();
+    if ((e.ctrlKey && (pressedKey == "c" || pressedKey == "x" || pressedKey == "v" || pressedKey == "a" || pressedKey == "u")) ||  e.keyCode == 123) {
+        return false;
+    }
+}
