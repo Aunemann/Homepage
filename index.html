@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="./IOd1jtt.png" alt="Logo"
+    <img class="logo" src="./Logo.png" alt="Logo"
     width="60">
     <div>
       <h1 id="Home" class="htext">Ant's Homepage</h1>
@@ -28,10 +28,7 @@
  <div class="section">
     <div class="section-item">
       <h3 id="About">About me</h3>
-      <p>Hi, my name is Anty. I am 14 years old. I am passionate about Aviation and web development.</p>
-      <img id="FqykS3g" src="./FqykS3g.png" title="F35C Parked on the carrier elevator."
-      width="500"/>
-      <p class="Imgtext">This is one of my photos I took. <a href="https://aunemann.github.io/PhotoSite/">See more here</a></p>
+      <p>Hi, my name is Anty. I am 14 years old. I am most passionate about Aviation, and web development.</p>
     </div>
    </div>
   </div>
@@ -46,6 +43,49 @@
     <div class="section-item">
       <h3>Favorite Games</h3>
       <p>Some of my favorite games are Vtol VR, Microsoft Flight Simulator, Road 96, Red Dead Redemption 2, Sea Of Thieves and Battlebit</p>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-item">
+    <h3>Some Of my photos</h3>
+    <div class="row">
+      <div class="column">
+        <img src="./Pictures/F35C-CarrierParked1-Edited.png" alt="F35C Parked" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./Pictures/Eurofighter-Typhoon2-Edited.png" alt="EuroFighter Landing" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./Pictures/F35C-USNavy1-Edited.png" alt="F35C" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./Pictures/F35RoNAF-Oslo1-Edited.png" alt="RoNAF F35A" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="./Pictures/F16ViperDisplay-Clouds2-edited.png" alt="F16 Venom" onclick="myFunction(this);">
+      </div>
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+      <img id="expandedImg" style="width:100%">
+    
+      <div id="imgtext"></div>
+    </div>
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+    <p class="Imgtext">This is some of my photos I took. <a href="https://aunemann.github.io/PhotoSite/">See more here</a></p>
+    <p id="warning">If you wish to use some of theese photos , please contact me. <a href="mailto: aune.thorsenfoto@gmail.com">aune.thorsenfoto@gmail.com</a></p>
     </div>
   </div>
 </div>
@@ -75,22 +115,13 @@
     <div class="section-item">
       <h3>Discord</h3>
       <p>Contact me on discord at t.aune</p>
+      <h3>Mail</h3>
+          <p>Contact me on mail at <a href="mailto: aune.thorsenfoto@gmail.com">aune.thorsenfoto@gmail.com</a></p>
     </div>
   </div>
-    <div class="section">
-      <div class="section-item">
-        <h3>Github</h3>
-        <p>Contact me on github at <a href="https://github.com/Aunemann">Aunemann</a></p>
-      </div>
-    </div>
-      <div class="section">
-        <div class="section-item">
-          <h3>Mail</h3>
-          <p>Contact me on mail at <a href="aune.thorsenfoto@gmail.com">aune.thorsenfoto@gmail.com</a></a></p>
-        </div>
-      </div>
 <footer>
   <p class="copyright">&copy; Anty</p> 
   <p class="footertext">This project is open source on my github. Feel free to use it as you feel just credit me.</p> 
   <script src="./script.js"></script>
+  <script src="./Slideshow.js"></script>
     <body>
