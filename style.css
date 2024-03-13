@@ -153,7 +153,7 @@ h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
   }
   
   p.footertext {
@@ -235,3 +235,8 @@ h2 {
     cursor: pointer;
   }
   
+  #DCMAProtected {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
