@@ -239,16 +239,42 @@ li[title]:hover::after {
   animation: fadeIn 1s ease-in-out;
 }
 
+@media print {
+  html, body {
+     display: none;  /* hide whole page */
+  }
+}
 
+#imgtext {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+  font-size: 50px;
+}
 
-.enlarged {
+.container {
   position: fixed;
   top: 50%;
   left: 50%;
+  max-height: 50%;
+  max-width: 50%;
   transform: translate(-50%, -50%);
-  background-color: #202020;
-  border: 5px solid #195190;
   max-width: calc(100vw - 40px);
   max-height: calc(100vh - 40px);
-  z-index: 999;
+}
+
+#imgtext {
+  position: fixed;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.closebtn {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
 }

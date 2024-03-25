@@ -1,26 +1,12 @@
-var prevScrollPos = window.pageYOffset;
-
-window.addEventListener('scroll', function() {
-  var currentScrollPos = window.pageYOffset;
-  var element = document.getElementById("myFooter");
-
-  if (prevScrollPos > currentScrollPos) {
-    element.style.opacity = "1";
-  } else {
-    element.style.opacity = "0";
-  }
-
-  prevScrollPos = currentScrollPos;
-});
-var currentImgId;
-
-function enlargeImg(imgId) {
-  var img = document.getElementById(imgId);
-
-  // Add the "enlarged" class to the image element
-  img.classList.toggle("enlarged");
-  img.classList.toggle("photo")
-
-  // set current image id to clicked image id
-  currentImgId = imgId;
-};
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
