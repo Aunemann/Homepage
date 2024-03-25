@@ -23,8 +23,9 @@
 }
 */
 
-#warning {
+.warning {
     font-size: 11px;
+    text-align: center;
 }
   
    @keyframes slideInL {
@@ -207,8 +208,10 @@ h2 {
     background-color: #195190;
     background-clip: content-box, padding-box;
     border-radius: 3%;
+    border-color: #195190;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.
+    transition: transform 0s ease;
+
 }
 
 .photo:hover {
@@ -234,4 +237,18 @@ li[title]:hover::after {
   text-align: center;
   padding: 5px 0;
   animation: fadeIn 1s ease-in-out;
+}
+
+
+
+.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #202020;
+  border: 5px solid #195190;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  z-index: 999;
 }
