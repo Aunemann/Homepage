@@ -37,6 +37,21 @@ header {
   -moz-box-shadow: 2px 17px 22px -11px rgba(0,0,0,0.75);
 }
 
+nav {
+  background-color: #103764;
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+  font-size: 12px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
 /* Navigation Styles */
 .nav-buttons {
   display: flex;
@@ -111,12 +126,6 @@ footer {
 /* Miscellaneous Styles */
 #warning, #warning1 {
   font-size: 11px;
-}
-
-#warning2 {
-  font-size: 11px;
-  opacity: 0.4;
-  text-align: center;
 }
 
 .column {
@@ -302,15 +311,4 @@ li[title]:hover::after {
   margin: 5px;
   margin-top: 0%;
 
-}
-
-nav {
-  color:  white;
-  background-color: #154379;
-  padding: 0%;
-  margin: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
